@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-roboto: var(--font-roboto);
+  --font-inter: var(--font-inter);
+
+  /* Colors */
+  --color-indigo: #3e3772;
+  --color-indigo-dark: #2d2760;
+
+  /* Shadow */
+  --shadow-elevated: 0px 12px 35px 0px rgba(90, 88, 134, 0.25);
+  --shadow-soft-purple: 0px 12px 35px 0px rgba(90, 88, 134, 0.4);
+
+  /* Spacing Padding */
+  --spacing-8.5: 35px;
+  --spacing-8.5: 35px;
+  --spacing-base: 15px;
+
+  /* Radius Rounded */
+  --radius-3.5xl: 30px;
+}
+
+body {
+  font-family: Inter, Roboto, sans-serif;
+}
