@@ -7,6 +7,10 @@
   /* Colors */
   --color-indigo: #3e3772;
   --color-indigo-dark: #2d2760;
+  --color-emphasis-medium: #00000099;
+  --color-emphasis-high: #000000de;
+  --color-mist: #dadada;
+  --color-grape: #6200ee;
 
   /* Shadow */
   --shadow-elevated: 0px 12px 35px 0px rgba(90, 88, 134, 0.25);
@@ -19,6 +23,7 @@
 
   /* Radius Rounded */
   --radius-3.5xl: 30px;
+  --radius-base: 4px;
 }
 
 body {
