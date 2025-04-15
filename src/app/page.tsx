@@ -1,5 +1,6 @@
 import { Button } from '@/shared/ui/button';
 import { Input } from '@/shared/ui/input/input';
+import { Footer } from '@/views/footer/footer';
 import { Header } from '@/views/header';
 
 export default function Home() {
@@ -34,6 +35,7 @@ export default function Home() {
           <Input styleVariant="primary" label="Hello" />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

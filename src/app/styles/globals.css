@@ -5,6 +5,10 @@
   --header-min-height: 70px;
 }
 
+body:has(.no-doc-scroll) {
+  overflow: hidden;
+}
+
 @theme inline {
   --font-roboto: var(--font-roboto);
   --font-inter: var(--font-inter);
@@ -21,6 +25,10 @@
   --color-mercury: #e8e8e8;
   --color-elevated: #f4f4f5;
   --color-surface: #21212114;
+  --color-frost: #161616;
+  --color-warm-gray: #d6d2d2;
+  --color-gray-deep: #414351;
+  --color-gray-violent: #716c80;
 
   /* Shadow */
   --shadow-elevated: 0px 12px 35px 0px rgba(90, 88, 134, 0.25);

@@ -14,7 +14,7 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
     <div
       className={clsx(
         'absolute h-[calc(100dvh-var(--header-min-height))] bg-snow-mist w-full top-[var(--header-min-height)] transition-all duration-300',
-        isOpen && 'visible right-0',
+        isOpen && 'visible right-0 no-doc-scroll',
         !isOpen && 'invisible right-full'
       )}
     >

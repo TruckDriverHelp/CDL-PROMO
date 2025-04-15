@@ -15,9 +15,9 @@ export const Header = () => {
   const [burgerIsOpen, setBurgerIsOpen] = useState(false);
 
   return (
-    <div className="w-full md:px-[50px] lg:px-[100px] sm:px-[20px] max-h-[var(--header-max-height)] min-h-[var(--header-min-height)] px-5 shadow-soft-black  border-b border-mercury">
+    <div className="sticky z-20 top-0 w-full md:px-[50px] lg:px-[100px] sm:px-[20px] max-h-[var(--header-max-height)] min-h-[var(--header-min-height)] px-5 shadow-soft-black  border-b border-mercury bg-white">
       {/* container */}
-      <div className="flex sm:py-5 py-3.5 md:gap-x-10 gap-5 justify-between items-center sticky z-20 top-0 bg-white">
+      <div className="flex sm:py-5 py-3.5 md:gap-x-10 gap-5 justify-between items-center ">
         <Image src={Logo} alt="Company Logo" />
         <nav className="sm:block hidden ">
           <ul className="[&>li]:inline-block h-full flex md:gap-5 gap-2.5 justify-between text-nowrap">
