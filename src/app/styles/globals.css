@@ -1,5 +1,10 @@
 @import 'tailwindcss';
 
+:root {
+  --header-max-height: 85px;
+  --header-min-height: 70px;
+}
+
 @theme inline {
   --font-roboto: var(--font-roboto);
   --font-inter: var(--font-inter);
@@ -10,11 +15,17 @@
   --color-emphasis-medium: #00000099;
   --color-emphasis-high: #000000de;
   --color-mist: #dadada;
+  --color-snow-mist: #f6f9fb;
   --color-grape: #6200ee;
+  --color-clay: #262a37;
+  --color-mercury: #e8e8e8;
+  --color-elevated: #f4f4f5;
+  --color-surface: #21212114;
 
   /* Shadow */
   --shadow-elevated: 0px 12px 35px 0px rgba(90, 88, 134, 0.25);
   --shadow-soft-purple: 0px 12px 35px 0px rgba(90, 88, 134, 0.4);
+  --shadow-soft-black: 0px 2px 28px 0px rgba(0, 0, 0, 0.09);
 
   /* Spacing Padding */
   --spacing-8.5: 35px;
