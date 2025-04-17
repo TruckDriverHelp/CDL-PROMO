@@ -23,6 +23,7 @@ export const PartnershipBenefits = () => {
             записаться к вам на обучение.
           </span>
         </div>
+        {/* Card */}
         <div className="shadow-overlay-light px-6 pt-8 pb-14 rounded-xl min-w-[295px] max-w-[335px]">
           <Image src={Speaker} alt="card icon" className="mb-5" />
           <p className="font-inter font-bold text-xl text-clay pb-1.5">
@@ -33,6 +34,7 @@ export const PartnershipBenefits = () => {
             записаться к вам на обучение.
           </span>
         </div>
+        {/* Card */}
         <div className="shadow-overlay-light px-6 pt-8 pb-14 rounded-xl min-w-[295px] max-w-[335px]">
           <Image src={Clock} alt="card icon" className="mb-5" />
           <p className="font-inter font-bold text-xl text-clay pb-1.5">
@@ -43,6 +45,7 @@ export const PartnershipBenefits = () => {
             записаться к вам на обучение.
           </span>
         </div>
+        {/* Card */}
         <div className="shadow-overlay-light px-6 pt-8 pb-14 rounded-xl min-w-[295px] max-w-[335px]">
           <Image src={Star} alt="card icon" className="mb-5" />
           <p className="font-inter font-bold text-xl text-clay pb-1.5">

@@ -29,6 +29,8 @@ body:has(.no-doc-scroll) {
   --color-warm-gray: #d6d2d2;
   --color-gray-deep: #414351;
   --color-gray-violent: #716c80;
+  --color-sky-fade: #e7ebfb;
+  --color-purple-fade: #9290bb;
 
   /* Shadow */
   --shadow-elevated: 0px 12px 35px 0px rgba(90, 88, 134, 0.25);
