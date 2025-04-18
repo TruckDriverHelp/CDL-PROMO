@@ -8,14 +8,14 @@ export const ContactUs = () => {
       <h2 className="font-inter font-bold md:text-[32px] md:leading-[40px] text-center text-2xl text-white max-w-[390px] ">
         Либо свяжитесь с нами удобным вам способом
       </h2>
-      <div className="bg-purple-fade sm:px-[46px] px-6 py-[35px] rounded-xl flex sm:flex-row flex-col gap-8 items-center">
+      <div className="bg-purple-fade sm:px-[46px] px-6 py-[35px] rounded-xl flex sm:flex-row flex-col gap-8 items-center hover:bg-indigo-lightest hover:text-clay text-white">
         <Image
           src={ContactUsAvatar}
           alt="contact us avatar"
           className="object-cover size-[112px]"
         />
 
-        <div className="text-white font-inter max-sm:text-center">
+        <div className="font-inter max-sm:text-center">
           <p className="font-bold text-xl">Захар Бушуев</p>
           <p className="font-normal text-base mb-4">
             Менеджер по работе с партнерами
