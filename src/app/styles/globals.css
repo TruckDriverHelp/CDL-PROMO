@@ -16,6 +16,7 @@ body:has(.no-doc-scroll) {
   /* Colors */
   --color-indigo: #3e3772;
   --color-indigo-dark: #2d2760;
+  --color-indigo-muted: #63618e;
   --color-emphasis-medium: #00000099;
   --color-emphasis-high: #000000de;
   --color-mist: #dadada;

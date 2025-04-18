@@ -1,3 +1,4 @@
+import { ContactUs } from '@/views/contact-us';
 import { Footer } from '@/views/footer/footer';
 import { Header } from '@/views/header';
 import { MainAdvantages } from '@/views/main-advantages';
@@ -12,6 +13,7 @@ export default function Home() {
         <MainAdvantages />
         <PartnershipBenefits />
         <PartnershipProgram />
+        <ContactUs />
       </main>
       <Footer />
     </>
