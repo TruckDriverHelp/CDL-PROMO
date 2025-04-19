@@ -2,7 +2,6 @@
 
 import ArrowRight from '@/shared/assets/icons/arrow-right.svg';
 import clsx from 'clsx';
-import Image from 'next/image';
 import Link from 'next/link';
 
 interface SidebarProps {
@@ -13,7 +12,7 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
   return (
     <div
       className={clsx(
-        'fixed h-[calc(100dvh-var(--header-min-height))] bg-snow-mist w-full top-[var(--header-min-height)] transition-all duration-300',
+        'fixed h-[calc(100dvh-var(--header-min-height))] bg-snow-mist w-full top-[var(--header-min-height)] transition-all duration-300 z-10',
         isOpen && 'visible right-0 no-doc-scroll',
         !isOpen && 'invisible right-full'
       )}
@@ -34,11 +33,12 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
               <details className="marker:hidden group p-3 bg-white">
                 <summary className="font-inter font-bold text-base text-clay flex justify-between items-center">
                   Ресурсы
-                  <Image
+                  {/* <Image
                     className="group-open:rotate-90"
                     src={ArrowRight}
                     alt=""
-                  />
+                  /> */}
+                  <ArrowRight className="group-open:rotate-90" />
                 </summary>
                 <ul className="[&>li]:inline-block grid gap-2 mt-3">
                   <li className="font-inter text-base text-clay">

@@ -3,7 +3,6 @@ import Community from '@/shared/assets/icons/community.svg';
 import Speaker from '@/shared/assets/icons/speaker.svg';
 import Star from '@/shared/assets/icons/star.svg';
 import { Button } from '@/shared/ui/button';
-import Image from 'next/image';
 
 export const PartnershipBenefits = () => {
   return (
@@ -14,7 +13,8 @@ export const PartnershipBenefits = () => {
       <div className="flex xl:flex-nowrap flex-wrap gap-5 justify-center">
         {/* Card */}
         <div className="shadow-overlay-light px-6 pt-8 pb-14 rounded-xl min-w-[295px] max-w-[335px]">
-          <Image src={Community} alt="card icon" className="mb-5" />
+          {/* <Image src={Community} alt="card icon" className="mb-5" /> */}
+          <Community className="mb-5" />
           <p className="font-inter font-bold text-xl text-clay pb-1.5">
             Регулярный поток клиентов
           </p>
@@ -25,7 +25,8 @@ export const PartnershipBenefits = () => {
         </div>
         {/* Card */}
         <div className="shadow-overlay-light px-6 pt-8 pb-14 rounded-xl min-w-[295px] max-w-[335px]">
-          <Image src={Speaker} alt="card icon" className="mb-5" />
+          {/* <Image src={Speaker} alt="card icon" className="mb-5" /> */}
+          <Speaker className="mb-5" />
           <p className="font-inter font-bold text-xl text-clay pb-1.5">
             Регулярный поток клиентов
           </p>
@@ -36,7 +37,8 @@ export const PartnershipBenefits = () => {
         </div>
         {/* Card */}
         <div className="shadow-overlay-light px-6 pt-8 pb-14 rounded-xl min-w-[295px] max-w-[335px]">
-          <Image src={Clock} alt="card icon" className="mb-5" />
+          {/* <Image src={Clock} alt="card icon" className="mb-5" /> */}
+          <Clock className="mb-5" />
           <p className="font-inter font-bold text-xl text-clay pb-1.5">
             Регулярный поток клиентов
           </p>
@@ -47,7 +49,8 @@ export const PartnershipBenefits = () => {
         </div>
         {/* Card */}
         <div className="shadow-overlay-light px-6 pt-8 pb-14 rounded-xl min-w-[295px] max-w-[335px]">
-          <Image src={Star} alt="card icon" className="mb-5" />
+          {/* <Image src={Star} alt="card icon" className="mb-5" /> */}
+          <Star className="mb-5" />
           <p className="font-inter font-bold text-xl text-clay pb-1.5">
             Регулярный поток клиентов
           </p>
