@@ -54,3 +54,19 @@ body:has(.no-doc-scroll) {
 body {
   font-family: Inter, Roboto, sans-serif;
 }
+
+.ezzy-modal {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+body:has(dialog[open]):has(dialog[data-lock]) {
+  overflow: hidden;
+}
+
+.ezzy-modal-content-wrapper {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

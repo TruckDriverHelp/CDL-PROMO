@@ -1,7 +1,10 @@
 'use client';
 
 import ArrowRight from '@/shared/assets/icons/arrow-right.svg';
+import BurgerClose from '@/shared/assets/icons/burger-close.svg';
+import CheckBig from '@/shared/assets/icons/check-big.svg';
 import clsx from 'clsx';
+import { EzzyModal } from 'ezzy-modal';
 import Link from 'next/link';
 
 interface SidebarProps {
@@ -20,6 +23,15 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
       <div className="w-full h-full px-5 py-6 ">
         <nav>
           <ul className="flex flex-col gap-3 [&>li]:inline-block">
+            <li className="w-full bg-white p-3 font-inter font-bold text-base align-middle">
+              <button
+                className="block"
+                onClick={() => window['ezzyModal']?.language.showModal()}
+              >
+                Русский
+              </button>
+            </li>
+
             <li className="w-full bg-white p-3 font-inter font-bold text-base align-middle">
               <Link
                 href={'#'}
@@ -67,6 +79,54 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
           </ul>
         </nav>
       </div>
+
+      <EzzyModal closeOnOverlayClick className="bottom-0" id="language">
+        <div className="w-full rounded-t-xl bg-white">
+          <div className="px-5 py-4 border-b border-b-surface flex justify-between items-center">
+            <p className="font-inter font-bold text-xl text-clay">
+              Выберете язык
+            </p>
+            <BurgerClose
+              onClick={() => window['ezzyModal']?.language.close()}
+            />
+          </div>
+
+          <ul className="px-5 py-4 [&>li]:inline-block flex flex-col">
+            <li className="py-3 border-b border-b-surface">
+              <button className="flex justify-between items-center w-full">
+                <p className="font-roboto font-normal text-emphasis-high text-base">
+                  English
+                </p>
+                <CheckBig />
+              </button>
+            </li>
+            <li className="py-3 border-b border-b-surface">
+              <button className="flex justify-between items-center w-full">
+                <p className="font-roboto font-normal text-emphasis-high text-base">
+                  English
+                </p>
+                {/* <CheckBig /> */}
+              </button>
+            </li>
+            <li className="py-3 border-b border-b-surface">
+              <button className="flex justify-between items-center w-full">
+                <p className="font-roboto font-normal text-emphasis-high text-base">
+                  English
+                </p>
+                {/* <CheckBig /> */}
+              </button>
+            </li>
+            <li className="py-3">
+              <button className="flex justify-between items-center w-full">
+                <p className="font-roboto font-normal text-emphasis-high text-base">
+                  English
+                </p>
+                {/* <CheckBig /> */}
+              </button>
+            </li>
+          </ul>
+        </div>
+      </EzzyModal>
     </div>
   );
 };
