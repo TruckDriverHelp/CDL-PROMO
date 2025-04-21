@@ -1,17 +1,39 @@
 'use client';
 
+import { usePathname, useRouter } from '@/i18n/navigation';
+import { routing } from '@/i18n/routing';
 import ArrowRight from '@/shared/assets/icons/arrow-right.svg';
 import BurgerClose from '@/shared/assets/icons/burger-close.svg';
 import CheckBig from '@/shared/assets/icons/check-big.svg';
 import clsx from 'clsx';
 import { EzzyModal } from 'ezzy-modal';
+import { Locale, useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { useParams } from 'next/navigation';
 
 interface SidebarProps {
   isOpen: boolean;
   setIsOpen(state: boolean): void;
 }
 export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
+  const t = useTranslations('LocaleSwitcher');
+  const locale = useLocale();
+
+  const router = useRouter();
+  const pathname = usePathname();
+  const params = useParams();
+
+  const onLanguageChange = (value: string) => {
+    const nextLocale = value as Locale;
+    router.replace(
+      // @ts-expect-error -- TypeScript will validate that only known `params`
+      // are used in combination with a given `pathname`. Since the two will
+      // always match for the current route, we can skip runtime checks.
+      { pathname, params },
+      { locale: nextLocale }
+    );
+    return undefined;
+  };
   return (
     <div
       className={clsx(
@@ -92,38 +114,23 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
           </div>
 
           <ul className="px-5 py-4 [&>li]:inline-block flex flex-col">
-            <li className="py-3 border-b border-b-surface">
-              <button className="flex justify-between items-center w-full">
-                <p className="font-roboto font-normal text-emphasis-high text-base">
-                  English
-                </p>
-                <CheckBig />
-              </button>
-            </li>
-            <li className="py-3 border-b border-b-surface">
-              <button className="flex justify-between items-center w-full">
-                <p className="font-roboto font-normal text-emphasis-high text-base">
-                  English
-                </p>
-                {/* <CheckBig /> */}
-              </button>
-            </li>
-            <li className="py-3 border-b border-b-surface">
-              <button className="flex justify-between items-center w-full">
-                <p className="font-roboto font-normal text-emphasis-high text-base">
-                  English
-                </p>
-                {/* <CheckBig /> */}
-              </button>
-            </li>
-            <li className="py-3">
-              <button className="flex justify-between items-center w-full">
-                <p className="font-roboto font-normal text-emphasis-high text-base">
-                  English
-                </p>
-                {/* <CheckBig /> */}
-              </button>
-            </li>
+            {routing.locales.map((cur) => (
+              <li
+                className="py-3 border-b border-b-surface"
+                key={cur}
+                value={cur}
+              >
+                <button
+                  onClick={() => onLanguageChange(cur)}
+                  className="flex justify-between items-center w-full"
+                >
+                  <p className="font-roboto font-normal text-emphasis-high text-base">
+                    {t('locale', { locale: cur })}
+                  </p>
+                  {locale === cur && <CheckBig />}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
       </EzzyModal>

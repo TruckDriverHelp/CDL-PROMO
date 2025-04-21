@@ -1,4 +1,6 @@
 'use client';
+import { usePathname, useRouter } from '@/i18n/navigation';
+import { routing } from '@/i18n/routing';
 import BurgerClose from '@/shared/assets/icons/burger-close.svg';
 import BurgerDefault from '@/shared/assets/icons/burger-default.svg';
 import ExpandMore from '@/shared/assets/icons/expand-more.svg';
@@ -6,13 +8,35 @@ import SelectGlobal from '@/shared/assets/icons/global.svg';
 import Logo from '@/shared/assets/icons/logo.svg';
 import { ClientOnlyPortal } from '@/shared/components/client-portal';
 import clsx from 'clsx';
+import { Locale, useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useParams } from 'next/navigation';
+import { ChangeEvent, useState, useTransition } from 'react';
 import { Sidebar } from './sidebar';
 
 export const Header = () => {
   const [burgerIsOpen, setBurgerIsOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const t = useTranslations('LocaleSwitcher');
+  const locale = useLocale();
+
+  const router = useRouter();
+  const [isPending, startTransition] = useTransition();
+  const pathname = usePathname();
+  const params = useParams();
+
+  function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
+    const nextLocale = event.target.value as Locale;
+    startTransition(() => {
+      router.replace(
+        // @ts-expect-error -- TypeScript will validate that only known `params`
+        // are used in combination with a given `pathname`. Since the two will
+        // always match for the current route, we can skip runtime checks.
+        { pathname, params },
+        { locale: nextLocale }
+      );
+    });
+  }
 
   return (
     <div className="sticky z-20 top-0 w-full md:px-[50px] lg:px-[100px] sm:px-[20px] max-h-[var(--header-max-height)] min-h-[var(--header-min-height)] px-5 shadow-soft-black  border-b border-mercury bg-white">
@@ -101,9 +125,15 @@ export const Header = () => {
             className="appearance-none outline-none shadow-none border-none h-full text-center [text-align-last:center] absolute w-full top-[50%] transform -translate-x-3 -translate-y-1/2"
             name="Language Select"
             id="language-select"
+            disabled={isPending}
+            defaultValue={locale}
+            onChange={onSelectChange}
           >
-            <option value="ru">Russian</option>
-            <option value="en">English</option>
+            {routing.locales.map((cur) => (
+              <option key={cur} value={cur}>
+                {t('locale', { locale: cur })}
+              </option>
+            ))}
           </select>
           {/* <Image src={ExpandMore24} alt="" /> */}
           <ExpandMore />
