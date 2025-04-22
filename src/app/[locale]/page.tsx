@@ -7,6 +7,12 @@ import { PartnershipBenefits } from '@/views/partnership-benefits';
 import { PartnershipProgram } from '@/views/partnership-program';
 import { Promo } from '@/views/promo';
 
+// "HomePage": {
+//   "MainAdvantages": {
+//     "title": "s"
+//   }
+// },
+
 export default function Home() {
   return (
     <>

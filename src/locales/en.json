@@ -1,8 +1,162 @@
 {
-  "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+  "Header": {
+    "language-modal": {
+      "title": "Choose Language"
+    },
+    "home-link": "Home",
+    "resources-link": "Resources",
+    "DMV-link": "DMV Help",
+    "contacts-link": "Contacts",
+    "become-driver-link": {
+      "title": "How to become a Truck Driver in USA",
+      "link": "https://www.cdlhelp.com/how-to-become-a-truck-driver/"
+    },
+    "get-cdl-link": {
+      "title": "How to get CDL",
+      "link": "https://www.cdlhelp.com/how-to-get-cdl/"
+    },
+    "how-to-use-link": {
+      "title": "How to use the CDL Help App",
+      "link": "https://www.cdlhelp.com/how-to-use-cdl-help/"
+    },
+    "get-cdl-permit-link": {
+      "title": "How to get a CDL Permit",
+      "link": "https://www.cdlhelp.com/how-to-get-cdl-permit/"
+    },
+    "cdl-questions-link": {
+      "title": "Frequently Asked Questions CDL help",
+      "link": "https://www.cdlhelp.com/frequently-asked-questions/"
+    },
+    "cdl-taught-link": {
+      "title": "What is taught in CDL schools",
+      "link": "https://www.cdlhelp.com/what-is-taught-in-cdl-schools/"
+    },
+    "texas-cvo-test-link": {
+      "title": "Texas CVO Knowledge Test",
+      "link": "https://www.cdlhelp.com/cdl-texas/"
+    }
   },
+
+  "MainAdvantages": {
+    "title": "Are you a CDL school?Grow your business with us!",
+    "desc": "Join the CDL Help partner program to access high-quality leads – motivated students actively searching for the best CDL training.",
+    "cta-button": "Become a partner"
+  },
+
+  "PartnershipBenefits": {
+    "title": "Advantages of partnering with CDL Help",
+    "cta-button": "Get started",
+    "SteadyStreamStudents": {
+      "title": "A steady stream of students",
+      "desc": "Gain exclusive access to motivated students actively looking for CDL training."
+    },
+    "SchoolsVisibility": {
+      "title": "Increase your school’s visibility",
+      "desc": "Stand out and attract more students in your state by joining our network."
+    },
+    "FreePeriod": {
+      "title": "Try free trial period, no risk",
+      "desc": "Enjoy your first 2 months free –    no hidden fees, no upfront investment."
+    },
+    "SupportiveExperience": {
+      "title": "Seamless and supportive experience",
+      "desc": "Effortless onboarding, full support at every step, and a user-friendly dashboard to manage your leads with ease."
+    }
+  },
+
+  "PartnershipProgram": {
+    "title": "How it works?",
+    "SignUp": {
+      "title": "Sign up",
+      "desc": "and add your driving school to our network"
+    },
+    "VerifyAccount": {
+      "title": "Sign up"
+    },
+    "StudentsApplications": {
+      "title": "Receive student applications",
+      "desc": "from those searching for CDL schools in your area"
+    },
+    "BusinessGrow": {
+      "title": "Grow your business",
+      "desc": "Connect, enroll, and grow – engage with potential students, accept payments, and expand your business hassle-free!"
+    }
+  },
+
+  "ContactUs": {
+    "title": "Or contact us in a way that is convenient for you",
+    "manager-name": "Zakhar Bushuev",
+    "manager-desc": "Partner Manager"
+  },
+
+  "FAQ": {
+    "title": "Frequently Asked Questions (FAQ):",
+    "desc": "The CDL Help Partner Program connects CDL schools with motivated students who are preparing to obtain their licenses. Below, we’ve provided detailed answers to the most common questions about the program:",
+    "JoinPartnerProgram": {
+      "title": "How do I join the CDL Help Partner Program?",
+      "desc": "<p>Стать частью партнёрской программы очень легко: вам нужно заполнить простую регистрационную форму и указать информацию о вашей школе. После подачи заявки наша команда проверит ваши данные:</p> <li>адрес школы и контактную информацию</li> <li>готовность принимать новых студентов</li> <li>подлинность регистрации вашей школы в FMCSA</li>"
+    },
+    "ReceiveConfirmation": {
+      "title": "When will I receive confirmation?",
+      "desc": "<p>В течение трёх рабочих дней после регистрации с вами свяжется менеджер CDL Help, чтобы:</p> <li>подтвердить вашу информацию</li> <li>обсудить условия сотрудничества после бесплатного пробного периода</li> <li>ответить на любые вопросы о программе</li>"
+    },
+    "HowActivationWork": {
+      "title": "How does activation work?",
+      "desc": "<p>После подтверждения вашей заявки:</p> <li>ваша школа появится в сети CDL Help</li> <li>вам откроется доступ к удобной панели управления для аналитики и работы с лидами</li>"
+    },
+    "LeadGenerationWork": {
+      "title": "How does lead generation work?",
+      "desc": "<p>Мотивированные студенты, которые готовятся получить лицензию, теперь могут легко найти вашу школу через приложение CDL Help. Как это работает:</p> <li>Студенты заходят в раздел «Школы»</li> <li>Они заполняют короткую форму, где выбирают свой город и штат</li> <li>На вашу панель управления автоматически отправляется запрос на обучение</li>"
+    },
+    "StartReceivingLeads": {
+      "title": "When will I start receiving leads?",
+      "desc": "<p>Вы начнете получать лиды в вашу панель управления и через push-уведомления сразу после активации. Каждый лид будет содержать:</p> <li>местоположение студента</li> <li>время подачи заявки</li> <li>опцию, которая позволяет отправить приглашение напрямую выбранному студенту</li>"
+    },
+    "AfterActivation": {
+      "title": "What happens after activation?",
+      "desc": "<p>Как новый партнер, вы получите два месяца бесплатного периода. После этого вы сможете:</p> <li>приглашать студентов, которые соответствуют вашим требованиям</li> <li>налаживать первый контакт со студентом через нашу систему, которая связана с вашим номером</li> <li>видеть в панели управления количество звонков из нашей системы и анализировать эффективность</li>"
+    },
+    "BenefitsForSchool": {
+      "title": "How does the CDL Help Partner Program benefit my school?",
+      "desc": "<p>Партнёрская программа CDL Help помогает школам:</p> <li>находить новых учеников намного быстрее</li> <li>легко и быстро связываться с заинтересованными и мотивированными студентами в вашем регионе</li> <li>зачислять студентов в разы проще и быстрее благодаря тому, что они получают только квалифицированные заявки и от качественных и мотивированных лидов</li> <li>увеличивать эффективность продаж и повышать конверсию</li>"
+    }
+  },
+
+  "Promo": {
+    "title": "Submit a request <span>now</span> and receive leads <span>for free</span> for 2 months",
+    "button-cta": "Leave a request"
+  },
+
+  "Footer": {
+    "mobile-app": "Mobile app for iOS and Android with CDL tests and translation capability",
+    "llc": "©2025 TruckDriver.help LLC",
+    "rights-reserved": "LLC All rights reserved.",
+    "org": "This platform is privately operated and is not affiliated with any government organization.",
+
+    "cdl-help": {
+      "title": "CDL Help",
+      "how-to-use": "How to use the app",
+      "about": "About",
+      "free-questions": "Try free questions"
+    },
+
+    "support": {
+      "title": "Support",
+      "privacy-policy": "Privacy Policy",
+      "terms-conditions": "Terms & Conditions",
+      "feedback": "Feedback",
+      "frequently-questions": "Frequently Asked Questions"
+    },
+
+    "resources": {
+      "title": "Resources",
+      "become-truck-driver": "How to become a truck driver in USA",
+      "get-cdl-permit": "How to get a CDL Permit",
+      "get-cdl": "How to get CDL",
+      "find-job": "Find a job"
+    }
+  },
+
   "LocaleSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, ru {Russian} en {English} other {Unknown}}"

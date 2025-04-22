@@ -17,6 +17,7 @@ interface SidebarProps {
 }
 export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
   const t = useTranslations('LocaleSwitcher');
+  const d = useTranslations('Header');
   const locale = useLocale();
 
   const router = useRouter();
@@ -32,7 +33,6 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
       { pathname, params },
       { locale: nextLocale }
     );
-    return undefined;
   };
   return (
     <div
@@ -50,7 +50,7 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
                 className="block"
                 onClick={() => window['ezzyModal']?.language.showModal()}
               >
-                Русский
+                {t('locale', { locale })}
               </button>
             </li>
 
@@ -60,29 +60,50 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
                 className="block"
                 onClick={() => setIsOpen(false)}
               >
-                Главная
+                {d('home-link')}
               </Link>
             </li>
             <li className="w-full cursor-pointer">
               <details className="marker:hidden group p-3 bg-white">
                 <summary className="font-inter font-bold text-base text-clay flex justify-between items-center">
-                  Ресурсы
-                  {/* <Image
-                    className="group-open:rotate-90"
-                    src={ArrowRight}
-                    alt=""
-                  /> */}
+                  {d('resources-link')}
+
                   <ArrowRight className="group-open:rotate-90" />
                 </summary>
                 <ul className="[&>li]:inline-block grid gap-2 mt-3">
                   <li className="font-inter text-base text-clay">
-                    <Link className="block" href={'/test'}>
-                      Ресурсы 1
+                    <Link href={d('become-driver-link.link')}>
+                      {d('become-driver-link.title')}
                     </Link>
                   </li>
                   <li className="font-inter text-base text-clay">
-                    <Link className="block" href={'/test'}>
-                      Ресурсы 2
+                    <Link href={d('get-cdl-link.link')}>
+                      {d('get-cdl-link.title')}
+                    </Link>
+                  </li>
+                  <li className="font-inter text-base text-clay">
+                    <Link href={d('get-cdl-link.link')}>
+                      {d('how-to-use-link.title')}
+                    </Link>
+                  </li>
+                  <li className="font-inter text-base text-clay">
+                    <Link href={d('get-cdl-link.link')}>
+                      {d('get-cdl-permit-link.title')}
+                    </Link>
+                  </li>
+                  <li className="font-inter text-base text-clay">
+                    <Link href={d('get-cdl-link.link')}>
+                      {d('cdl-questions-link.title')}
+                    </Link>
+                  </li>
+                  <li className="font-inter text-base text-clay">
+                    <Link href={d('get-cdl-link.link')}>
+                      {d('cdl-taught-link.title')}
+                    </Link>
+                  </li>
+                  <li className="font-inter text-base text-clay">
+                    <Link href={d('get-cdl-link.link')}>
+                      {d('texas-cvo-test-link.title')}
                     </Link>
                   </li>
                 </ul>
@@ -90,12 +111,12 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
             </li>
             <li className="w-full bg-white p-3 font-inter font-bold text-base align-middle">
               <Link className="block" href={'#'}>
-                DMV Help
+                {d('DMV-link')}
               </Link>
             </li>
             <li className="w-full bg-white p-3 font-inter font-bold text-base align-middle">
               <Link className="block" href={'#'}>
-                Контакты
+                {d('contacts-link')}
               </Link>
             </li>
           </ul>
@@ -106,7 +127,7 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
         <div className="w-full rounded-t-xl bg-white">
           <div className="px-5 py-4 border-b border-b-surface flex justify-between items-center">
             <p className="font-inter font-bold text-xl text-clay">
-              Выберете язык
+              {d('language-modal.title')}
             </p>
             <BurgerClose
               onClick={() => window['ezzyModal']?.language.close()}
