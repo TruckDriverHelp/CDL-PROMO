@@ -20,6 +20,7 @@ body:has(.no-doc-scroll) {
   --color-indigo-lightest: #e8eaff;
   --color-emphasis-medium: #00000099;
   --color-emphasis-high: #000000de;
+  --color-violet-soft: #cecfe2;
   --color-mist: #dadada;
   --color-snow-mist: #f6f9fb;
   --color-grape: #6200ee;

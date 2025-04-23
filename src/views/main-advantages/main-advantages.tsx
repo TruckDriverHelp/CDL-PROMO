@@ -1,4 +1,5 @@
-import HeroImage from '@/shared/assets/images/hero-illustration.png';
+import { Link } from '@/i18n/navigation';
+import HeroImage from '@/shared/assets/images/hero-illustration.webp';
 import { Button } from '@/shared/ui/button';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -16,7 +17,9 @@ export const MainAdvantages = () => {
           <p className="max-sm:text-center font-inter font-normal text-base text-gray-deep mb-6">
             {t('desc')}
           </p>
-          <Button content={t('cta-button')} className="max-sm:w-full" />
+          <Link href={'https://school.cdlhelp.com/login'}>
+            <Button content={t('cta-button')} className="max-sm:w-full" />
+          </Link>
         </div>
 
         <Image

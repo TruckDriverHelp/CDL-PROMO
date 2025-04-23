@@ -135,25 +135,56 @@
 
     "cdl-help": {
       "title": "CDL Help",
-      "how-to-use": "Как использовать приложение CDL Help",
-      "about": "О проекте",
-      "free-questions": "Попробовать бесплатно"
+      "how-to-use": {
+        "title": "Как использовать приложение CDL Help",
+        "link": "https://www.cdlhelp.com/ru/kak-ispolzovat-cdlhelp"
+      },
+      "about": {
+        "title": "О проекте",
+        "link": "https://www.cdlhelp.com/ru/#about"
+      },
+      "free-questions": {
+        "title": "Попробовать бесплатно",
+        "link": "https://test.cdlhelp.com/ru"
+      }
     },
-
     "support": {
       "title": "Поддержка",
-      "privacy-policy": "Конфиденциальность",
-      "terms-conditions": "Публичное соглашение",
-      "feedback": "Обратная связь",
-      "frequently-questions": "Часто задаваемые вопросы"
+      "privacy-policy": {
+        "title": "Конфиденциальность",
+        "link": "https://www.cdlhelp.com/privacy-policy"
+      },
+      "terms-conditions": {
+        "title": "Публичное соглашение",
+        "link": "https://www.cdlhelp.com/terms-conditions"
+      },
+      "feedback": {
+        "title": "Обратная связь",
+        "link": "https://www.cdlhelp.com/ru/contact"
+      },
+      "frequently-questions": {
+        "title": "Часто задаваемые вопросы",
+        "link": "https://www.cdlhelp.com/ru/chasto-zadavaemye-voprosy"
+      }
     },
-
     "resources": {
       "title": "Ресурсы",
-      "become-truck-driver": "Как стать дальнобойщиком в США",
-      "get-cdl-permit": "Как получить CDL пермит",
-      "get-cdl": "Как получить CDL",
-      "find-job": "Найти работу"
+      "become-truck-driver": {
+        "title": "Как стать дальнобойщиком в США",
+        "link": "https://www.cdlhelp.com/ru/kak-stat-dalnoboishikom"
+      },
+      "get-cdl-permit": {
+        "title": "Как получить CDL пермит",
+        "link": "https://www.cdlhelp.com/ru/kak-poluchit-cdl-permit"
+      },
+      "get-cdl": {
+        "title": "Как получить CDL",
+        "link": "https://www.cdlhelp.com/ru/kak-poluchit-cdl"
+      },
+      "find-job": {
+        "title": "Найти работу",
+        "link": "https://www.truckdriver.help"
+      }
     }
   },
 

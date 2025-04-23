@@ -56,7 +56,7 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
 
             <li className="w-full bg-white p-3 font-inter font-bold text-base align-middle">
               <Link
-                href={'#'}
+                href={'/'}
                 className="block"
                 onClick={() => setIsOpen(false)}
               >
@@ -110,12 +110,12 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
               </details>
             </li>
             <li className="w-full bg-white p-3 font-inter font-bold text-base align-middle">
-              <Link className="block" href={'#'}>
+              <Link className="block" href={'https://www.dmvhelp.app'}>
                 {d('DMV-link')}
               </Link>
             </li>
             <li className="w-full bg-white p-3 font-inter font-bold text-base align-middle">
-              <Link className="block" href={'#'}>
+              <Link className="block" href={'https://www.cdlhelp.com/contact'}>
                 {d('contacts-link')}
               </Link>
             </li>
@@ -137,7 +137,7 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
           <ul className="px-5 py-4 [&>li]:inline-block flex flex-col">
             {routing.locales.map((cur) => (
               <li
-                className="py-3 border-b border-b-surface"
+                className="py-3 not-last:border-b not-last:border-b-surface"
                 key={cur}
                 value={cur}
               >

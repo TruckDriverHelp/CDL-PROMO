@@ -35,7 +35,7 @@ export const FAQ = () => {
             >
               <summary className="font-inter font-bold text-base text-clay flex justify-between sm:items-center">
                 <div className="flex sm:flex-row flex-col sm:gap-6 gap-2 sm:items-center">
-                  <span className="font-inter font-bold text-purple-fade text-[32px] leading-[40px]">
+                  <span className="font-inter font-bold group-open:text-purple-fade text-violet-soft text-[32px] leading-[40px]">
                     0{(index += 1)}
                   </span>
                   <p className="font-inter text-xl font-bold text-clay">

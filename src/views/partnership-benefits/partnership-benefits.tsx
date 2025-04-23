@@ -1,3 +1,4 @@
+import { Link } from '@/i18n/navigation';
 import Clock from '@/shared/assets/icons/clock.svg';
 import Community from '@/shared/assets/icons/community.svg';
 import Speaker from '@/shared/assets/icons/speaker.svg';
@@ -52,7 +53,9 @@ export const PartnershipBenefits = () => {
           );
         })}
       </div>
-      <Button content={t('cta-button')} className="sm:w-fit w-full" />
+      <Link href={'https://school.cdlhelp.com/login'}>
+        <Button content={t('cta-button')} className="sm:w-fit w-full" />
+      </Link>
     </section>
   );
 };

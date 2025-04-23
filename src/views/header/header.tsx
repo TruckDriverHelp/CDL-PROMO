@@ -40,14 +40,14 @@ export const Header = () => {
   }
 
   return (
-    <div className="sticky z-20 top-0 w-full md:px-[50px] lg:px-[100px] sm:px-[20px] max-h-[var(--header-max-height)] min-h-[var(--header-min-height)] px-5 shadow-soft-black  border-b border-mercury bg-white">
+    <header className="sticky z-20 top-0 w-full md:px-[50px] lg:px-[100px] sm:px-[20px] max-h-[var(--header-max-height)] min-h-[var(--header-min-height)] px-5 shadow-soft-black  border-b border-mercury bg-white">
       {/* container */}
       <div className="flex sm:py-5 py-3.5 md:gap-x-10 gap-5 justify-between items-center ">
         <Logo />
         <nav className="sm:block hidden ">
           <ul className="[&>li]:inline-block h-full flex md:gap-5 gap-2.5 justify-between text-nowrap">
             <li className="font-inter font-bold text-base  text-clay cursor-pointer hover:text-indigo">
-              <Link href={'#manage'}>{d('home-link')}</Link>
+              <Link href={'/'}>{d('home-link')}</Link>
             </li>
             <li className="font-inter font-bold text-base text-clay cursor-pointer hover:text-indigo relative group">
               <button
@@ -105,19 +105,24 @@ export const Header = () => {
               </div>
             </li>
             <li className="font-inter font-bold text-base  text-clay cursor-pointer hover:text-indigo">
-              <Link href={'#faq'}> {d('DMV-link')}</Link>
+              <Link href={`https://www.dmvhelp.app`}>{d('DMV-link')}</Link>
             </li>
             <li className="font-inter font-bold text-base text-clay cursor-pointer hover:text-indigo">
-              <Link href={'#faq'}>{d('contacts-link')}</Link>
+              <Link href={`https://www.cdlhelp.com/contact`}>
+                {d('contacts-link')}
+              </Link>
             </li>
           </ul>
         </nav>
-        <div className="hidden sm:flex justify-between items-center gap-2.5 group bg-elevated py-1.5 px-3 rounded-md relative w-[135px]">
+        <label
+          htmlFor="locale-select"
+          className="hidden sm:flex justify-between items-center gap-2.5 group bg-elevated py-1.5 px-3 rounded-md relative w-[135px]"
+        >
           <SelectGlobal />
           <select
             className="appearance-none outline-none shadow-none border-none h-full text-center [text-align-last:center] absolute w-full top-[50%] transform -translate-x-3 -translate-y-1/2"
             name="Language Select"
-            id="language-select"
+            id="locale-select"
             disabled={isPending}
             defaultValue={locale}
             onChange={onSelectChange}
@@ -129,7 +134,7 @@ export const Header = () => {
             ))}
           </select>
           <ExpandMore />
-        </div>
+        </label>
         <button
           onClick={() => setBurgerIsOpen((prev) => !prev)}
           className="sm:hidden cursor-pointer"
@@ -142,6 +147,6 @@ export const Header = () => {
       <ClientOnlyPortal selector="body">
         <Sidebar setIsOpen={setBurgerIsOpen} isOpen={burgerIsOpen} />
       </ClientOnlyPortal>
-    </div>
+    </header>
   );
 };

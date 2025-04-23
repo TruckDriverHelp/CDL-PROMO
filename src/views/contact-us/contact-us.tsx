@@ -1,6 +1,6 @@
 import Mail from '@/shared/assets/icons/mail.svg';
 import Phone from '@/shared/assets/icons/phone.svg';
-import ContactUsAvatar from '@/shared/assets/images/contact-us-avatar.png';
+import ContactUsAvatar from '@/shared/assets/images/contact-us-avatar.webp';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';

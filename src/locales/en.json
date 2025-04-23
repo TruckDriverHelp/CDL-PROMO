@@ -135,25 +135,58 @@
 
     "cdl-help": {
       "title": "CDL Help",
-      "how-to-use": "How to use the app",
-      "about": "About",
-      "free-questions": "Try free questions"
+      "how-to-use": {
+        "title": "How to use the app",
+        "link": "https://www.cdlhelp.com/how-to-use-cdl-help"
+      },
+      "about": {
+        "title": "About",
+        "link": "https://www.cdlhelp.com/#about"
+      },
+      "free-questions": {
+        "title": "Try free questions",
+        "link": "https://test.cdlhelp.com/"
+      }
     },
 
     "support": {
       "title": "Support",
-      "privacy-policy": "Privacy Policy",
-      "terms-conditions": "Terms & Conditions",
-      "feedback": "Feedback",
-      "frequently-questions": "Frequently Asked Questions"
+      "privacy-policy": {
+        "title": "Privacy Policy",
+        "link": "https://www.cdlhelp.com/privacy-policy"
+      },
+      "terms-conditions": {
+        "title": "Terms & Conditions",
+        "link": "https://www.cdlhelp.com/terms-conditions"
+      },
+      "feedback": {
+        "title": "Feedback",
+        "link": "https://www.cdlhelp.com/en/contact"
+      },
+      "frequently-questions": {
+        "title": "Frequently Asked Questions",
+        "link": "https://www.cdlhelp.com/frequently-asked-questions"
+      }
     },
 
     "resources": {
       "title": "Resources",
-      "become-truck-driver": "How to become a truck driver in USA",
-      "get-cdl-permit": "How to get a CDL Permit",
-      "get-cdl": "How to get CDL",
-      "find-job": "Find a job"
+      "become-truck-driver": {
+        "title": "How to become a truck driver in USA",
+        "link": "https://www.cdlhelp.com/how-to-become-a-truck-driver"
+      },
+      "get-cdl-permit": {
+        "title": "How to get a CDL Permit",
+        "link": "https://www.cdlhelp.com/how-to-get-cdl-permit"
+      },
+      "get-cdl": {
+        "title": "How to get CDL",
+        "link": "https://www.cdlhelp.com/how-to-get-cdl"
+      },
+      "find-job": {
+        "title": "Find a job",
+        "link": "https://www.truckdriver.help"
+      }
     }
   },
 

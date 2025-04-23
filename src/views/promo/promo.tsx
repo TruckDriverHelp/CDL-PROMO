@@ -1,5 +1,6 @@
+import { Link } from '@/i18n/navigation';
 import Logo from '@/shared/assets/icons/logo.svg';
-import Illustration from '@/shared/assets/images/faq-illustration-fixed.png';
+import Illustration from '@/shared/assets/images/faq-illustration-fixed.webp';
 import { Button } from '@/shared/ui/button';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -25,8 +26,15 @@ export const Promo = () => {
               span: (chunk) => <span className="text-indigo">{chunk}</span>,
             })}
           </h2>
-
-          <Button content={t('button-cta')} className="md:place-self-start" />
+          <Link
+            className="md:place-self-start block"
+            href={'https://school.cdlhelp.com/login'}
+          >
+            <Button
+              content={t('button-cta')}
+              className="md:place-self-start w-full"
+            />
+          </Link>
         </div>
         <Image
           className="max-md:hidden object-contain w-full h-full xl:max-w-[480px] max-w-[295px]"

@@ -1,4 +1,4 @@
-import ProgramMackBook from '@/shared/assets/images/program-mackbook.png';
+import ProgramMackBook from '@/shared/assets/images/program-mackbook.webp';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
