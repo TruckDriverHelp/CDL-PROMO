@@ -58,7 +58,9 @@ export const FAQ = () => {
                 <ul className="list-disc list-inside">
                   {t.rich(`${key}.desc`, {
                     p: () => null,
-                    li: (chunks) => <li>{chunks}</li>,
+                    li: (chunks) => (
+                      <li className="first-letter:uppercase">{chunks}</li>
+                    ),
                   })}
                 </ul>
               </div>

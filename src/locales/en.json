@@ -94,31 +94,31 @@
     "desc": "The CDL Help Partner Program connects CDL schools with motivated students who are preparing to obtain their licenses. Below, we’ve provided detailed answers to the most common questions about the program:",
     "JoinPartnerProgram": {
       "title": "How do I join the CDL Help Partner Program?",
-      "desc": "<p>Стать частью партнёрской программы очень легко: вам нужно заполнить простую регистрационную форму и указать информацию о вашей школе. После подачи заявки наша команда проверит ваши данные:</p> <li>адрес школы и контактную информацию</li> <li>готовность принимать новых студентов</li> <li>подлинность регистрации вашей школы в FMCSA</li>"
+      "desc": "<p>Joining is quick and easy. Simply fill out a short registration form and provide basic information about your school. Once submitted, our team will verify:</p> <li>Your school’s address and contact details</li> <li>Your readiness to accept new students</li> <li>Your school’s registration status with the FMCSA</li>"
     },
     "ReceiveConfirmation": {
       "title": "When will I receive confirmation?",
-      "desc": "<p>В течение трёх рабочих дней после регистрации с вами свяжется менеджер CDL Help, чтобы:</p> <li>подтвердить вашу информацию</li> <li>обсудить условия сотрудничества после бесплатного пробного периода</li> <li>ответить на любые вопросы о программе</li>"
+      "desc": "<p>Within three business days, a CDL Help manager will contact you to:</p> <li>Confirm your school’s information</li> <li>Discuss next steps after your free trial</li> <li>Answer any questions you may have about the program</li>"
     },
     "HowActivationWork": {
       "title": "How does activation work?",
-      "desc": "<p>После подтверждения вашей заявки:</p> <li>ваша школа появится в сети CDL Help</li> <li>вам откроется доступ к удобной панели управления для аналитики и работы с лидами</li>"
+      "desc": "<p>Once your application is approved:</p> <li>Your school will be listed in the CDL Help network</li> <li>You’ll gain access to an easy-to-use dashboard for managing leads and tracking performance</li>"
     },
     "LeadGenerationWork": {
       "title": "How does lead generation work?",
-      "desc": "<p>Мотивированные студенты, которые готовятся получить лицензию, теперь могут легко найти вашу школу через приложение CDL Help. Как это работает:</p> <li>Студенты заходят в раздел «Школы»</li> <li>Они заполняют короткую форму, где выбирают свой город и штат</li> <li>На вашу панель управления автоматически отправляется запрос на обучение</li>"
+      "desc": "<p>Motivated students looking for CDL training can now easily find your school through the CDL Help app. Here’s how it works:</p> <li>Students open the “Schools” section</li> <li>They fill out a short form with their city and state</li> <li>A lead request is automatically sent to your dashboard</li>"
     },
     "StartReceivingLeads": {
       "title": "When will I start receiving leads?",
-      "desc": "<p>Вы начнете получать лиды в вашу панель управления и через push-уведомления сразу после активации. Каждый лид будет содержать:</p> <li>местоположение студента</li> <li>время подачи заявки</li> <li>опцию, которая позволяет отправить приглашение напрямую выбранному студенту</li>"
+      "desc": "<p>Leads will begin appearing in your dashboard and via push notifications right after activation. Each lead includes:</p> <li>The student’s location</li> <li>Submission timestamp</li> <li>An option to send a direct invite to the student</li>"
     },
     "AfterActivation": {
       "title": "What happens after activation?",
-      "desc": "<p>Как новый партнер, вы получите два месяца бесплатного периода. После этого вы сможете:</p> <li>приглашать студентов, которые соответствуют вашим требованиям</li> <li>налаживать первый контакт со студентом через нашу систему, которая связана с вашим номером</li> <li>видеть в панели управления количество звонков из нашей системы и анализировать эффективность</li>"
+      "desc": "<p>As a new partner, you’ll receive 2 months of free access. During this period, you can:</p> <li>Invite students who meet your school’s criteria</li> <li>Contact students directly via our integrated system using your phone number</li> <li>View call analytics and monitor performance inside your dashboard</li>"
     },
     "BenefitsForSchool": {
       "title": "How does the CDL Help Partner Program benefit my school?",
-      "desc": "<p>Партнёрская программа CDL Help помогает школам:</p> <li>находить новых учеников намного быстрее</li> <li>легко и быстро связываться с заинтересованными и мотивированными студентами в вашем регионе</li> <li>зачислять студентов в разы проще и быстрее благодаря тому, что они получают только квалифицированные заявки и от качественных и мотивированных лидов</li> <li>увеличивать эффективность продаж и повышать конверсию</li>"
+      "desc": "<p>The CDL Help Partner Program allows your school to:</p> <li>Find new students faster</li> <li>Easily connect with interested and motivated applicants in your area</li> <li>Increase enrollment rates by receiving only high-quality, pre-qualified leads</li> <li>Boost your sales efficiency and improve conversion rates</li>"
     }
   },
 
