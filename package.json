@@ -10,11 +10,14 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "ezzy-modal": "^4.0.4",
     "next": "15.3.0",
+    "next-intl": "^4.0.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

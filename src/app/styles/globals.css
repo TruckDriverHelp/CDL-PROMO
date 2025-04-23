@@ -1,5 +1,14 @@
 @import 'tailwindcss';
 
+:root {
+  --header-max-height: 85px;
+  --header-min-height: 70px;
+}
+
+body:has(.no-doc-scroll) {
+  overflow: hidden;
+}
+
 @theme inline {
   --font-roboto: var(--font-roboto);
   --font-inter: var(--font-inter);
@@ -7,10 +16,31 @@
   /* Colors */
   --color-indigo: #3e3772;
   --color-indigo-dark: #2d2760;
+  --color-indigo-muted: #63618e;
+  --color-indigo-lightest: #e8eaff;
+  --color-emphasis-medium: #00000099;
+  --color-emphasis-high: #000000de;
+  --color-violet-soft: #cecfe2;
+  --color-mist: #dadada;
+  --color-snow-mist: #f6f9fb;
+  --color-grape: #6200ee;
+  --color-clay: #262a37;
+  --color-mercury: #e8e8e8;
+  --color-elevated: #f4f4f5;
+  --color-surface: #21212114;
+  --color-frost: #161616;
+  --color-warm-gray: #d6d2d2;
+  --color-gray-deep: #414351;
+  --color-gray-violent: #716c80;
+  --color-sky-fade: #e7ebfb;
+  --color-purple-fade: #9290bb;
 
   /* Shadow */
   --shadow-elevated: 0px 12px 35px 0px rgba(90, 88, 134, 0.25);
   --shadow-soft-purple: 0px 12px 35px 0px rgba(90, 88, 134, 0.4);
+  --shadow-muted-violent: 0px 0px 30px 0px rgba(146, 144, 187, 0.38);
+  --shadow-soft-black: 0px 2px 28px 0px rgba(0, 0, 0, 0.09);
+  --shadow-overlay-light: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
 
   /* Spacing Padding */
   --spacing-8.5: 35px;
@@ -19,8 +49,25 @@
 
   /* Radius Rounded */
   --radius-3.5xl: 30px;
+  --radius-base: 4px;
 }
 
 body {
   font-family: Inter, Roboto, sans-serif;
+}
+
+.ezzy-modal {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+body:has(dialog[open]):has(dialog[data-lock]) {
+  overflow: hidden;
+}
+
+.ezzy-modal-content-wrapper {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
