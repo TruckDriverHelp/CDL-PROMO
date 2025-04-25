@@ -1,6 +1,4 @@
-import ProgramMackBook from '@/shared/assets/images/program-mackbook.webp';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 
 const localeKeys = [
   'SignUp',
@@ -43,13 +41,7 @@ export const PartnershipProgram = () => {
           })}
         </ol>
 
-        <Image
-          src={ProgramMackBook}
-          alt="partnership-program image"
-          className="object-cover"
-        />
-
-        {/* <div className="size-full xl:max-w-[655px] xl:h-[460px]">
+        <div className="size-full xl:max-w-[655px] xl:h-[460px]">
           <video
             loop
             muted
@@ -57,10 +49,10 @@ export const PartnershipProgram = () => {
             playsInline
             className="size-full object-cover"
           >
-            <source src={'/cdl-laptop.webm'} type="video/webm" />
             <source src={'/cdl-laptop.mp4'} type="video/mp4" />
+            <source src={'/cdl-laptop.webm'} type="video/webm" />
           </video>
-        </div> */}
+        </div>
       </div>
     </section>
   );
