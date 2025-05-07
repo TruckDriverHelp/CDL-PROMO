@@ -2,8 +2,8 @@ import { InputLabelStateVariantType, InputStateVariantType, InputStyleVariantTyp
 
 export const inputStyleVariant: Record<InputStyleVariantType, InputStateVariantType> = {
     primary: {
-        default: 'rounded-base bg-transparent border-1 border-mist appearance-none text-emphasis-high',
-        focus: 'focus:outline-none focus:ring-0 focus:border-grape focus:border-2'
+        default: 'rounded-base bg-white border-1 border-mist appearance-none text-emphasis-high',
+        focus: 'focus:outline-none focus:ring-0 focus:border-grape focus:border-1'
     }
 }
 
