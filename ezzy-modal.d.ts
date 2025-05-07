@@ -2,6 +2,7 @@ import 'ezzy-modal';
 
 interface ModalNames {
     'language': 'Language modal';
+    'formSubmit': "Submit form modal"
 }
 
 declare module 'ezzy-modal' {

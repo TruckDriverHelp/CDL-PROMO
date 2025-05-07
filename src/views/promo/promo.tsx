@@ -26,10 +26,7 @@ export const Promo = () => {
               span: (chunk) => <span className="text-indigo">{chunk}</span>,
             })}
           </h2>
-          <Link
-            className="md:place-self-start block"
-            href={'https://school.cdlhelp.com/login'}
-          >
+          <Link className="md:place-self-start block" href={'#register-cta'}>
             <Button
               content={t('button-cta')}
               className="md:place-self-start w-full"

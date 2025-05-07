@@ -53,7 +53,7 @@ export const PartnershipBenefits = () => {
           );
         })}
       </div>
-      <Link href={'https://school.cdlhelp.com/login'}>
+      <Link href={'#register-cta'}>
         <Button content={t('cta-button')} className="sm:w-fit w-full" />
       </Link>
     </section>

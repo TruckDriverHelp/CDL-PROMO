@@ -89,6 +89,27 @@
     "manager-desc": "Partner Manager"
   },
 
+  "RegisterCta": {
+    "title": "<span>Register now</span> and get your first motivated students <span> today</span>",
+    "desc": "TruckDriver.help is the fast and convenient way to find the right drivers!",
+
+    "company": "Company",
+    "school-name": "School name*",
+    "school-site": "Website (optional)",
+
+    "contacts": "Contacts",
+    "name": "Name*",
+    "state": "State*",
+    "email": "E-mail*",
+    "city": "City*",
+    "address": "Address*",
+    "phone": "Phone number*",
+    "index": "ZIP code*",
+    "role": "My position in school",
+
+    "submit-button": "Submit application"
+  },
+
   "FAQ": {
     "title": "Frequently Asked Questions (FAQ):",
     "desc": "The CDL Help Partner Program connects CDL schools with motivated students who are preparing to obtain their licenses. Below, we’ve provided detailed answers to the most common questions about the program:",
@@ -188,6 +209,11 @@
         "link": "https://www.truckdriver.help"
       }
     }
+  },
+
+  "RegistrationFormSent": {
+    "title": "Thank you for registration",
+    "desc": "Expect an email or call from a CDL Help manager to discuss the next steps. If you have any questions, contact us at <Email>contact@cdlhelp.com</Email> or via <Telegram>https://t.me/tdhsupport</Telegram>"
   },
 
   "LocaleSwitcher": {

@@ -6,12 +6,7 @@ import { MainAdvantages } from '@/views/main-advantages';
 import { PartnershipBenefits } from '@/views/partnership-benefits';
 import { PartnershipProgram } from '@/views/partnership-program';
 import { Promo } from '@/views/promo';
-
-// "HomePage": {
-//   "MainAdvantages": {
-//     "title": "s"
-//   }
-// },
+import { RegisterCTA } from '@/views/register-cta';
 
 export default function Home() {
   return (
@@ -21,6 +16,7 @@ export default function Home() {
         <MainAdvantages />
         <PartnershipBenefits />
         <PartnershipProgram />
+        <RegisterCTA />
         <ContactUs />
         <FAQ />
         <Promo />

@@ -17,7 +17,7 @@ export const MainAdvantages = () => {
           <p className="max-sm:text-center font-inter font-normal text-base text-gray-deep mb-6">
             {t('desc')}
           </p>
-          <Link href={'https://school.cdlhelp.com/login'}>
+          <Link href={'#register-cta'}>
             <Button content={t('cta-button')} className="max-sm:w-full" />
           </Link>
         </div>

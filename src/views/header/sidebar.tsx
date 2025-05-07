@@ -35,7 +35,7 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
     );
   };
   return (
-    <div
+    <aside
       className={clsx(
         'fixed h-[calc(100dvh-var(--header-min-height))] bg-snow-mist w-full top-[var(--header-min-height)] transition-all duration-300 z-10',
         isOpen && 'visible right-0 no-doc-scroll',
@@ -129,9 +129,9 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
             <p className="font-inter font-bold text-xl text-clay">
               {d('language-modal.title')}
             </p>
-            <BurgerClose
-              onClick={() => window['ezzyModal']?.language.close()}
-            />
+            <button onClick={() => window['ezzyModal']?.language.close()}>
+              <BurgerClose />
+            </button>
           </div>
 
           <ul className="px-5 py-4 [&>li]:inline-block flex flex-col">
@@ -155,6 +155,6 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
           </ul>
         </div>
       </EzzyModal>
-    </div>
+    </aside>
   );
 };

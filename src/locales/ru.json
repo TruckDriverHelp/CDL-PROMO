@@ -83,6 +83,27 @@
     }
   },
 
+  "RegisterCta": {
+    "title": "<span>Зарегистрируйтесь</span> прямо сейчас и начните получать первых мотивированных клиентов уже <span> сегодня</span>",
+    "desc": "TruckDriver.help – быстрый и удобный способ найти нужных водителей!",
+
+    "company": "Компания",
+    "school-name": "Название школы*",
+    "school-site": "Сайт(опционально)",
+
+    "contacts": "Контакты",
+    "name": "Имя*",
+    "state": "Штат*",
+    "email": "E-mail*",
+    "city": "Город*",
+    "address": "Адрес*",
+    "phone": "Телефон*",
+    "index": "Почтовый индекс*",
+    "role": "Моя роль в школе",
+
+    "submit-button": "Оставить заявку"
+  },
+
   "ContactUs": {
     "title": "Либо свяжитесь с нами удобным вам способом",
     "manager-name": "Захар Бушуев",
@@ -186,6 +207,11 @@
         "link": "https://www.truckdriver.help"
       }
     }
+  },
+
+  "RegistrationFormSent": {
+    "title": "Спасибо за регистрацию",
+    "desc": "Ожидайте письмо или звонок от менеджера СDL Help, чтобы обсудить следующие шаги.Если у вас есть вопросы, свяжитесь с нами: <Email>contact@cdlhelp.com</Email> или через <Telegram>https://t.me/tdhsupport</Telegram>"
   },
 
   "LocaleSwitcher": {
